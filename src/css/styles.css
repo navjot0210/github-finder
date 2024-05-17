@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+html {
+  scrollbar-gutter: stable;
+}
+
+.container {
+  width: 800px;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  place-items: center;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.user-info, .profile-link, input[type=text], .message {
+  color: #fff;
+}
+
+input[type=text], .profile-link {
+  border-radius: 50px;
+}
+
+
+/* ---------------------------------------------------- */
+/* Home Page                                            */
+/* ---------------------------------------------------- */
+.git-icon {
+  margin-top: -80px;
+  width: 160px;
+  height: auto;
+  filter: invert(1);
+}
+
+input[type=text] {
+  margin: 60px 0 10px;
+  width: 280px;
+  height: 48px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: rgb(255 255 255 / 5%);
+  border: 1px solid rgb(255 255 255 / 10%);
+  transition: all 0.25s ease-in-out;
+}
+
+input[type=text]:focus {
+  border: 1px solid rgb(255 255 255 / 25%);
+}
+
+.message {
+  font-size: 1.5rem;
+}
+
+
+/* ------------------------------------------------ */
+/* User Page                                        */
+/* ------------------------------------------------ */
+.user-info {
+  margin-top: 70px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid rgb(255 255 255 / 40%);
+}
+
+.username {
+  margin: 20px 0 25px;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.stats {
+  gap: 50px;
+  text-transform: uppercase;
+}
+
+.stats span {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(40, 174, 112);
+}
+
+.stats p {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.profile-link {
+  margin: 35px 0 40px;
+  width: 150px;
+  height: 48px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  background-color: rgb(90, 20, 156);
+  border: 1px solid rgb(90, 20, 156);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    background-color: rgb(77, 14, 135);
+  }
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  line-height: 45px;
+}
+
+.all-repos {
+  margin-bottom: 34px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.repo {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: rgb(255 255 255 / 5%);
+  border-radius: 4px;
+}
+
+.repo-name {
+  margin-top: -7px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(40, 174, 112);
+}
+
+.latest-date {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgb(255 255 255 / 50%);
+}
+
+.repo-description {
+  margin-top: 4px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 70%;
+}
